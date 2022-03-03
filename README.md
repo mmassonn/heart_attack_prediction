@@ -8,4 +8,6 @@ C'est pourquoi les personnes souffrant de maladies cardiovasculaires ou exposée
 
 Ce projet de développement d'un outils de prédiction du risque d’infartus à partir des données cliniques s'inscrit dans cette démarche d'aide médicale au diagnostique.
 
-### mmm
+### Objectif
+
+Je choisi l'indice de concordance comme métrique d'évaluation. L'indice de concordance ou c-index est défini comme la proportion de paires concordantes divisée par le nombre total de paires d'évaluation possibles.
