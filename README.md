@@ -7,3 +7,5 @@ Aujourd'hui il est possible de prévenir la plupart des maladies cardiovasculair
 C'est pourquoi les personnes souffrant de maladies cardiovasculaires ou exposées à un risque élevé de maladies cardiovasculaires (du fait de la présence d’un ou plusieurs facteurs de risque comme l’hypertension, le diabète, l’hyperlipidémie ou une maladie déjà installée) nécessitent une détection précoce et une prise en charge comprenant soutien psychologique et médicaments, selon les besoins.
 
 Ce projet de développement d'un outils de prédiction du risque d’infartus à partir des données cliniques s'inscrit dans cette démarche d'aide médicale au diagnostique.
+
+### mmm
