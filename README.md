@@ -35,7 +35,6 @@ V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert Detrano,
 
 Donateur: David W. Aha (aha '@' ics.uci.edu) (714) 856-8779
 
-
 ### Objectif
 
 Je choisi l'indice de concordance comme métrique d'évaluation. L'indice de concordance ou c-index est défini comme la proportion de paires concordantes divisée par le nombre total de paires d'évaluation possibles.
