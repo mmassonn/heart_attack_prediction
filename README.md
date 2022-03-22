@@ -1,4 +1,4 @@
-# Prédiction du développement d'une cardiopathie à partir des données cliniques
+# Prédiction du risque de développement d'une cardiopathie
 
 Veuillez trouver ci-dessus :
 
