@@ -15,7 +15,7 @@ Les maladies cardiovasculaires sont selon l'Organisation Mondiale de la Santé, 
 
 Aujourd'hui il est possible de prévenir la plupart des maladies cardiovasculaires en prenant garde (à l’échelle de la population) aux facteurs de risque comportementaux comme le tabagisme, une mauvaise alimentation, l'obésité, la sédentarité et l'utilisation nocive de l’alcool.
 
-C'est pourquoi une détection précoce et une prise en charge (psychologique et médicale, selon les besoins) sont néessaires chez les personnes souffrant de maladies cardiovasculaires ou exposées à un risque élevé de maladies cardiovasculaires (du fait de la présence d’un ou plusieurs facteurs de risque comme l’hypertension, le diabète, l’hyperlipidémie ou une maladie déjà installée) nécessitent 
+C'est pourquoi une détection précoce et une prise en charge sont néessaires chez les personnes souffrant de maladies cardiovasculaires ou exposées à un risque élevé de développer une maladie cardiovasculaire. 
 
 L'objectif de ce projet est de mettre en place un outil nous permettant de prédire le risque de développer une cardiopathie. Il s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé par des experts, il ne doit pas être utilisé à des fins médicales.
 
@@ -50,16 +50,16 @@ Donateur: David W. Aha (aha '@' ics.uci.edu) (714) 856-8779
 
 ### Choix de la métrique
 
-Je choisis le score F1 comme métrique d'évaluation. Il permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans mon cas, la précision me permet d'être certain que lorsque l'agorithme prédit une cardiopathie, le patient a réelement cette pathologie. Et la sensibilité me permet de détecter le maximum de cardiopathie dans la population atteinte de cette dernière.
+Je choisis le score F1 comme métrique d'évaluation. Il permet de résumer les valeurs de la précision et de la sensiblité en une seule métrique. Dans mon cas, la précision me permet d'être certain que lorsque l'agorithme prédit une cardiopathie, le patient a réelement cette pathologie. Et la sensibilité me permet de détecter le maximum de cardiopathies dans la population qui en est atteinte.
 
 ### Choix du modèle
 
-En Machine Learning, les méthodes ensemblistes consistent à mettre en commun plusieurs algorithmes de Machine Learning affichant une performance modérée, afin d'obtenir des prédictions de meilleurs qualités. 
+En Machine Learning, les méthodes ensemblistes consistent à mettre en commun plusieurs algorithmes de Machine Learning affichant une performance modérée, afin d'obtenir des prédictions de meilleures qualités. 
 
 Ici j'essaie trois types de méthodes différentes :
 
 1) Le bagging (BaggingClassifier), aussi appelé bootstrap aggregating, consiste à entraîner plusieurs algorithmes de Machine Learning sur différents jeux de données. Ces derniers provenant du jeu de données originale, chaque algorithme observe sous un angle unique les données. Puis, lors de la prédiction globale on effectue un vote à la majorité pour la classification.
 
-2) La forêt aléatoire (RandomForestClassifier) est une amélioration du bagging, qui est associée au concept de sous-espace aléatoire, et qui s’attache à créer de multiples arbres de décision pour l’apprentissage, avec des modèles entraînés sur des sous-ensembles de données légèrement différents. Vu que les échantillons sont créés de manière aléatoire, la corrélation entre les arbres est réduite, et on obtient un meilleur résultat à la fin.
+2) La forêt aléatoire (RandomForestClassifier) est une amélioration du bagging, qui est associée au concept de sous-espace aléatoire, et qui s’attache à créer de multiples arbres de décision pour l’apprentissage, avec des modèles entraînés sur des sous-ensembles de données légèrement différents. Comme les échantillons sont créés de manière aléatoire, la corrélation entre les arbres est réduite, et on obtient un meilleur résultat à la fin.
 
-3) Le boosting (AdaBoostClassifier) va lui combiner les modèles classifieurs en les pondérant à chaque nouvelle prédiction, de façon à ce que les modèles ayant prédit correctement les fois précédentes aient un poids plus important que les modèles incorrects. Mieux un modèle classe, plus il devient important au fil du temps.
+3) Le boosting (AdaBoostClassifier) va quant à lui combiner les modèles classifieurs en les pondérant à chaque nouvelle prédiction, de façon à ce que les modèles ayant prédit correctement les fois précédentes aient un poids plus important que les modèles incorrects. Mieux un modèle classe, plus il devient important au fil du temps.
