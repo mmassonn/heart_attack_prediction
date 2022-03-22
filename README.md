@@ -19,7 +19,7 @@ C'est pourquoi les personnes souffrant de maladies cardiovasculaires ou exposée
 
 L'objectif de ce projet est de mettre en place un outil nous permettant de prédire le risque de développer une cardiopathie. Il s'inscrit dans une démarche d'aide médicale au diagnostique mais n'ayant pas été validé par des experts, il ne doit pas être utilisé à des fins médicales.
 
-### Base de données
+### Base de données (918 patients, 11 caractéristiques + 1 cible)
 
 Ce jeu de données a été créé en combinant différents jeux de données déjà disponibles indépendamment mais non combinés auparavant. Dans cet ensemble de données, 5 jeux de données cardiaques sont combinés sur 11 caractéristiques communes, ce qui en fait le plus grand ensemble de données sur les maladies cardiaques disponible à ce jour à des fins de recherche. 
 
